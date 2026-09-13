@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SK HEALTHCARES - Multispecialty healthcare with expert doctors and modern facilities.">
+  <title>SK HEALTHCARES | Compassionate Care, Advanced Medicine</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div></div>
+      <nav>
+        <a href="#about">About Us</a>
+        <a href="#health-tips">Health Tips</a>
+        <a href="#careers">Careers</a>
+        <a href="#contact">Contact</a>
+        <a class="wa" href="https://wa.me/91 9518255790" target="_blank" rel="noopener">◉ WhatsApp</a>
+        <button class="language">EN ▾</button>
+      </nav>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header-inner">
+      <a class="logo" href="#">
+        <img src="images/image3.jpg" alt="SK HEALTHCARES logo">
+      </a>
+
+      <button class="mobile-menu" aria-label="Open menu">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#doctors">Find A Doctor</a>
+        <a href="#locations">Our Locations⌄</a>
+        <a href="#specialties">Specialities⌄</a>
+        <a href="#international">International Patients</a>
+        <a href="#contact">Contact Us</a>
+        <button class="appointment-btn open-modal">Book An Appointment <span>→</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <button class="emergency" id="emergencyBtn">
+    E<br>M<br>E<br>R<br>G<br>E<br>N<br>C<br>Y
+</button>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-image" src="images/image1.jpg" alt="SK HEALTHCARES hospital building">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">SK HEALTHCARES</p>
+          <h1>Your Health.<br><span>Our Priority.</span></h1>
+          <p>Modern multi-specialty healthcare combining advanced technology, experienced professionals and compassionate patient-focused care.</p>
+          <button class="primary-btn open-modal">Book An Appointment <span>→</span></button>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-badge"><b>24/7</b><span>Emergency<br>Care</span></div>
+          <div class="hero-circle">
+            <div class="cross">✚</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-panel container">
+        <div class="select-box"><span>♙</span><select><option>Select Doctor / Speciality</option><option>General Physician</option><option>Preventive Healthcare</option><option>Pulmonology & Critical Care</option></select></div>
+        <div class="select-box"><span>▣</span><select id="searchLocation">
+            <option value="">Select Hospital Location</option>
+            <option value="Connaught Place, New Delhi">Connaught Place, New Delhi</option>
+            <option value="Chandigarh, Punjab">Chandigarh, Punjab</option>
+            <option value="Netaji Subhash Place, New Delhi">Netaji Subhash Place, New Delhi</option>
+            <option value="Sonipat, Haryana">Sonipat, Haryana</option>
+            <option value="Ambala, Haryana">Ambala, Haryana</option>
+            <option value="Panipat, Haryana">Panipat, Haryana</option>
+          </select></div>
+        <button class="search-btn open-modal">Book An Appointment</button>
+      </div>
+      <p class="symptom-line">Know your symptoms but unsure which specialist to consult? <b>Call us at +91  9518255790</b></p>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section-pattern" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="section-kicker">✚ &nbsp; About Us</p>
+          <h2>XYZ Group of Hospitals</h2>
+          <p class="lead">A trusted multispecialty healthcare network built around clinical excellence, modern infrastructure and patient-first care.</p>
+          <p>SK HEALTHCARES brings together experienced clinicians, advanced diagnostic technology and a wide range of medical specialties. Our goal is simple: provide safe, accessible and evidence-based treatment while making every patient feel cared for.</p>
+
+          <div class="stats">
+            <div><strong>250+</strong><span>Experienced Doctors</span></div>
+            <div><strong>8+</strong><span>Speciality Centres</span></div>
+            <div><strong>750+</strong><span>Hospital Beds</span></div>
+          </div>
+          <a class="outline-btn" href="#contact">Know More <span>→</span></a>
+        </div>
+
+        <div class="location-grid">
+          <div class="location-title">Select a Location <span>→</span></div>
+          <div class="location-cards">
+            <div class="location-card">🏥<b>Connaught Place</b><small>New Delhi</small></div>
+            <div class="location-card">🏢<b>Chandigarh</b><small>Punjab</small></div>
+            <div class="location-card">🏥<b>Netaji Subhash Place</b><small>New Delhi</small></div>
+            <div class="location-card">🏢<b>Sonipat</b><small>Haryana</small></div>
+            <div class="location-card">🏥<b>Ambala</b><small>Haryana</small></div>
+            <div class="location-card">🏢<b>Panipat</b><small>Haryana</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECIALTIES -->
+    <section class="specialties section-pattern-blue" id="specialties">
+      <div class="container">
+        <p class="section-kicker">✚ &nbsp; Our Specialities</p>
+        <div class="section-heading">
+          <h2>Centres of Excellence</h2>
+          <button class="outline-btn">View All <span>→</span></button>
+        </div>
+
+        <div class="specialty-layout">
+          <div class="specialty-list">
+            <div class="specialty active"><i>♡</i><span>Cardiac Sciences</span></div>
+            <div class="specialty"><i>♧</i><span>Neuro Sciences — Brain & Spine</span></div>
+            <div class="specialty"><i>⌁</i><span>Renal Sciences & Kidney Care</span></div>
+            <div class="specialty"><i>◉</i><span>Gastro Sciences</span></div>
+            <div class="specialty"><i>✦</i><span>Cancer Care</span></div>
+            <div class="specialty"><i>⚕</i><span>Ortho & Joint Replacement</span></div>
+            <div class="specialty"><i>◇</i><span>General & Laparoscopic Surgery</span></div>
+            <div class="specialty"><i>♧</i><span>Obstetrics & Gynaecology</span></div>
+          </div>
+
+          <div class="procedures">
+            <div class="tabs"><button class="tab active">Key Procedures</button><button class="tab">Diseases</button></div>
+            <select><option>Select Speciality</option><option>Cardiology</option><option>Neurology</option><option>Orthopaedics</option></select>
+            <ul id="procedureList">
+              <li>Minimally Invasive Cardiac Surgery <span>→</span></li>
+              <li>Advanced Angioplasty <span>→</span></li>
+              <li>Neuro & Spine Surgery <span>→</span></li>
+              <li>Total Knee Replacement <span>→</span></li>
+              <li>Cancer Surgery <span>→</span></li>
+              <li>Advanced Laparoscopic Surgery <span>→</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOCTORS -->
+    <section class="doctors" id="doctors">
+      <div class="container doctors-inner">
+        <div class="doctor-intro">
+          <p class="section-kicker light">✚ &nbsp; Team of Experts</p>
+          <h2>Experienced Clinical Leaders</h2>
+          <p>Meet our experienced doctors who combine expertise, technology and empathy to deliver personalized care.</p>
+          <button class="primary-btn">Find a Doctor</button>
+        </div>
+
+        <div class="doctor-slider">
+          <article class="doctor-card">
+            <div class="doctor-photo"><img src="images/image4.jpg" alt="General Physician care"></div>
+            <h3>Dr. Sourabh Kamra</h3><p>MBBS, MD — Internal Medicine & General Physician</p><small>SK HEALTHCARES</small>
+            <div class="card-actions"><a href="tel:+91 9518255790">Call</a><a class="orange" href="https://wa.me/91 9518255790" target="_blank" rel="noopener">WhatsApp</a></div>
+          </article>
+          <article class="doctor-card">
+            <div class="doctor-photo"><img src="images/image5.jpg" alt="Preventive Healthcare"></div>
+            <h3>Dr. Mayank Kamra</h3><p>MBBS, MD — General Medicine & Preventive Healthcare</p><small>SK HEALTHCARES</small>
+            <div class="card-actions"><a href="tel:+91 9518255790">Call</a><a class="orange" href="https://wa.me/91 9518255790" target="_blank" rel="noopener">WhatsApp</a></div>
+          </article>
+          <article class="doctor-card">
+            <div class="doctor-photo"><img src="images/image6.jpg" alt="Pulmonology and Critical Care"></div>
+            <h3>Dr. Mohit Chawla</h3><p>MBBS, MD — Pulmonology & Critical Care</p><small>SK HEALTHCARES</small>
+            <div class="card-actions"><a href="tel:+91 9518255790">Call</a><a class="orange" href="https://wa.me/91 9518255790" target="_blank" rel="noopener">WhatsApp</a></div>
+          </article>
+        </div></div>
+      </div>
+    </section>
+
+    <!-- CASES -->
+    <section class="cases" id="health-tips">
+      <div class="container">
+        <p class="section-kicker">✚ &nbsp; Patient Stories</p>
+        <h2>Delivering Expert Care for Complex Conditions</h2>
+        <div class="filter-row">
+          <select id="caseHospital">
+              <option value="">Select Hospital</option>
+              <option value="Connaught Place, New Delhi">Connaught Place, New Delhi</option>
+              <option value="Chandigarh, Punjab">Chandigarh, Punjab</option>
+              <option value="Netaji Subhash Place, New Delhi">Netaji Subhash Place, New Delhi</option>
+              <option value="Sonipat, Haryana">Sonipat, Haryana</option>
+              <option value="Ambala, Haryana">Ambala, Haryana</option>
+              <option value="Panipat, Haryana">Panipat, Haryana</option>
+            </select>
+          <select><option>Select Speciality</option><option>Cardiology</option><option>Orthopaedics</option></select>
+          <button class="outline-btn">View All <span>→</span></button>
+        </div>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-image case-a"></div>
+            <div class="case-body"><h3>From Recovery to a Confident New Beginning</h3><p>A personalized treatment plan and dedicated rehabilitation helped a patient return to everyday life.</p><a href="#">Read More</a></div>
+          </article>
+          <article class="case-card">
+            <div class="case-image case-b"></div>
+            <div class="case-body"><h3>Advanced Care, Better Outcomes</h3><p>How coordinated multidisciplinary care helped a patient overcome a complex condition.</p><a href="#">Read More</a></div>
+          </article>
+          <article class="case-card">
+            <div class="case-image case-c"></div>
+            <div class="case-body"><h3>A New Path After Spine Surgery</h3><p>Expert surgical care followed by structured rehabilitation made recovery smoother.</p><a href="#">Read More</a></div>
+          </article>
+          <article class="case-card">
+            <div class="case-image case-d"></div>
+            <div class="case-body"><h3>Stronger Heart, Healthier Future</h3><p>Modern cardiac treatment combined with long-term lifestyle guidance.</p><a href="#">Read More</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section class="locations" id="locations">
+      <div class="container location-section">
+        <div class="location-panel">
+          <div class="state-tabs"><button class="active">Delhi</button><button>New Delhi</button><button>Central Delhi</button></div>
+          <div class="hospital-mini-grid">
+            <div><div class="hospital-img img-h1"></div><b>SK HEALTHCARES</b><p>Connaught Place, New Delhi, Delhi 110001</p><button>View Details</button></div>
+            <div><div class="hospital-img img-h2"></div><b>SK HEALTHCARES — Central Delhi</b><p>Connaught Place, New Delhi, Delhi 110001</p><button>View Details</button></div>
+            <div><div class="hospital-img img-h3"></div><b>SK HEALTHCARES — New Delhi</b><p>Connaught Place, New Delhi, Delhi 110001</p><button>View Details</button></div>
+          </div>
+        </div>
+        <div class="location-copy">
+          <p class="section-kicker light">✚ &nbsp; Our Hospital Locations</p>
+          <h2>Healing Near You</h2>
+          <p>Access quality healthcare, experienced specialists and modern facilities at a location convenient for you.</p>
+          <button class="primary-btn">View All</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- HEALTH -->
+    <section class="health section-pattern" id="careers">
+      <div class="container">
+        <p class="section-kicker">✚ &nbsp; Health Tips</p>
+        <div class="section-heading"><h2>Expert Advice for Healthy Life</h2><button class="outline-btn">View All <span>→</span></button></div>
+        <div class="health-grid">
+          <article class="featured-health">
+            <div class="health-image"></div><h3>Simple Habits That Support Better Health</h3><p>Practical guidance from our specialists to help you make informed healthcare decisions.</p><span>✦ General Wellness</span>
+          </article>
+          <div class="health-list">
+            <article><div class="small-img s1"></div><div><h3>Understanding Heart Health</h3><small>13 Sep 2026</small></div></article>
+            <article><div class="small-img s2"></div><div><h3>When Should You See a Neurologist?</h3><small>05 Sep 2026</small></div></article>
+            <article><div class="small-img s3"></div><div><h3>Healthy Living After Surgery</h3><small>28 Aug 2026</small></div></article>
+          </div>
+          <aside class="quick-links"><h2>Quick Links</h2><a href="#about">About Us <span>→</span></a><a href="#">Health Packages <span>→</span></a><a href="#">Second Opinion <span>→</span></a><a href="#doctors">Find a Doctor <span>→</span></a><a class="open-modal" href="#">Book an Appointment <span>→</span></a></aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news">
+      <div class="container">
+        <p class="section-kicker">✚ &nbsp; News & Updates</p>
+        <div class="section-heading"><h2>Hospital Announcements & News</h2><button class="outline-btn">View All <span>→</span></button></div>
+        <div class="news-grid">
+          <article><div class="news-img n1"></div><h3>SK HEALTHCARES Expands Advanced Care Services</h3><p>New clinical services designed to improve access to specialized treatment.</p></article>
+          <article><div class="news-img n2"></div><h3>Training the Next Generation of Healthcare Professionals</h3><p>Our hospital continues to support learning and professional development.</p></article>
+          <article><div class="news-img n3"></div><h3>New Technology for Faster, More Accurate Diagnosis</h3><p>Advanced diagnostic capabilities strengthen our patient care ecosystem.</p></article>
+          <article><div class="news-img n4"></div><h3>Celebrating Our Healthcare Teams</h3><p>Recognizing the people behind compassionate patient care every day.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="credentials" id="quality">
+    <div class="container credentials-inner">
+      <div><p class="section-kicker">✚ &nbsp; Quality & Safety</p><h2>Committed to Quality Healthcare</h2><p>Patient safety, reliable care and professional standards remain at the heart of SK HEALTHCARES.</p></div>
+      <img src="images/image2.jpg" alt="Healthcare accreditation and quality logos">
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#"><img src="images/image3.jpg" alt="SK HEALTHCARES logo"></a>
+        <p>Connaught Place,<br>New Delhi, Delhi 110001</p>
+        <p>✉ info@skhealthcares.example</p>
+        <p>☎ +91  9518255790</p>
+        <p>◷ 24/7 Emergency Department</p>
+        <div class="socials"><a>f</a><a>◎</a><a>▶</a><a>in</a></div>
+      </div>
+      <div><h4>Quick Links</h4><a href="#about">About Us</a><a href="#health-tips">Health Tips</a><a href="#">Careers</a><a href="#doctors">Find a Doctor</a><a href="#">Diseases</a><a href="#">Key Procedures</a><a href="#contact">Contact Us</a></div>
+      <div><h4>Specialities</h4><a href="#specialties">Cardiac Sciences</a><a href="#specialties">Neuro Sciences</a><a href="#specialties">Renal Sciences</a><a href="#specialties">Gastro Sciences</a><a href="#specialties">Cancer Care</a><a href="#specialties">Orthopaedics</a><a href="#specialties">General Surgery</a></div>
+      <div><h4>SK HEALTHCARES</h4><p>Connaught Place, New Delhi,<br>Delhi 110001</p><a href="tel:+91 9518255790">☎ +91  9518255790</a><a href="https://wa.me/91 9518255790" target="_blank" rel="noopener">◉ WhatsApp</a><button class="footer-appointment open-modal">Book an Appointment</button></div>
+    </div>
+    <div class="copyright"><div class="container">© 2026 SK HEALTHCARES. All Rights Reserved.</div></div>
+  </footer>
+
+  <div class="modal" id="appointmentModal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="close-modal" aria-label="Close">×</button>
+      <p class="section-kicker">✚ &nbsp; Appointment</p>
+      <h2>Book An Appointment</h2>
+      <form id="appointmentForm">
+
+    <input
+        id="patientName"
+        required
+        type="text"
+        placeholder="Your Name"
+    >
+
+    <input
+        id="patientPhone"
+        required
+        type="tel"
+        placeholder="Phone Number"
+    >
+
+    <input
+        id="patientEmail"
+        type="email"
+        placeholder="Email Address"
+    >
+
+    <select id="doctor" required>
+        <option value="">Select Doctor</option>
+        <option value="Dr. Sourabh Kamra">
+            Dr. Sourabh Kamra — Internal Medicine
+        </option>
+        <option value="Dr. Mayank Kamra">
+            Dr. Mayank Kamra — General Medicine
+        </option>
+        <option value="Dr. Mohit Chawla">
+            Dr. Mohit Chawla — Pulmonology & Critical Care
+        </option>
+    </select>
+
+    <select id="specialty" required>
+        <option value="">Select Speciality</option>
+        <option value="Internal Medicine & General Physician">
+            Internal Medicine & General Physician
+        </option>
+        <option value="General Medicine & Preventive Healthcare">
+            General Medicine & Preventive Healthcare
+        </option>
+        <option value="Pulmonology & Critical Care">
+            Pulmonology & Critical Care
+        </option>
+    </select>
+
+    <select id="location" required>
+        <option value="">Select Hospital Location</option>
+        <option value="Connaught Place, New Delhi">Connaught Place, New Delhi</option>
+        <option value="Chandigarh, Punjab">Chandigarh, Punjab</option>
+        <option value="Netaji Subhash Place, New Delhi">Netaji Subhash Place, New Delhi</option>
+        <option value="Sonipat, Haryana">Sonipat, Haryana</option>
+        <option value="Ambala, Haryana">Ambala, Haryana</option>
+        <option value="Panipat, Haryana">Panipat, Haryana</option>
+    </select>
+
+    <input
+        id="appointmentDate"
+        required
+        type="date"
+    >
+
+    <input
+        id="appointmentTime"
+        required
+        type="time"
+    >
+
+    <textarea
+        id="message"
+        placeholder="Message / Reason for Visit"
+        rows="3"
+    ></textarea>
+
+    <button class="primary-btn" type="submit">
+        Request Appointment →
+    </button>
+
+</form>
+
+<p class="form-message" id="formMessage"></p>
+      <p class="form-message" id="formMessage"></p>
+    </div>
+  </div>
+<div class="emergency-modal" id="emergencyModal">
+
+    <button class="emergency-close" id="emergencyClose">
+        ×
+    </button>
+
+    <div class="emergency-grid">
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🏥</div>
+            <h3>SK HEALTHCARES</h3>
+            <p>Connaught Place, New Delhi</p>
+            <a href="tel:+91 9518255790">+91  9518255790</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🚑</div>
+            <h3>24×7 Emergency</h3>
+            <p>Emergency Department</p>
+            <a href="tel:+91 9518255790">Call Now</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🩺</div>
+            <h3>Critical Care</h3>
+            <p>ICU & Critical Care</p>
+            <a href="tel:+91 9518255790">+91  9518255790</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🏨</div>
+            <h3>Operation Theatre</h3>
+            <p>Modern Operation Theatres</p>
+            <a href="tel:+91 9518255790">Call Now</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🤰</div>
+            <h3>Maternity Care</h3>
+            <p>Women & Maternity Care</p>
+            <a href="tel:+91 9518255790">+91  9518255790</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🔬</div>
+            <h3>Diagnostics</h3>
+            <p>Radiology & Pathology</p>
+            <a href="tel:+91 9518255790">Call Now</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">🧪</div>
+            <h3>Laboratory</h3>
+            <p>Advanced Pathology Services</p>
+            <a href="tel:+91 9518255790">+91  9518255790</a>
+        </div>
+
+        <div class="emergency-card">
+            <div class="emergency-icon">💊</div>
+            <h3>In-house Pharmacy</h3>
+            <p>Medicines & Pharmacy</p>
+            <a href="tel:+91 9518255790">Call Now</a>
+        </div>
+
+    </div>
+</div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
