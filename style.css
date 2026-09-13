@@ -67,9 +67,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
 
 .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}.hero-overlay{z-index:1}.hero-content,.search-panel,.symptom-line{position:relative;z-index:2}.logo img{width:225px;height:78px;object-fit:contain}.doctor-photo img{width:100%;height:100%;object-fit:cover}.doctor-card h3{padding:12px 12px 2px}.doctor-card p,.doctor-card small{padding:0 12px;display:block}.credentials{padding:65px 0;background:#075b84;color:#fff}.credentials-inner{display:flex;align-items:center;justify-content:space-between;gap:40px}.credentials h2{color:#fff}.credentials-inner>div{max-width:650px}.credentials-inner>img{width:430px;max-height:150px;object-fit:contain}.doctor-slider .card-actions a{flex:1;padding:11px;text-align:center;background:#edf1f2}.doctor-slider .card-actions .orange{background:var(--orange);color:#fff}
 @media(max-width:800px){.logo img{width:175px;height:66px}.credentials-inner{display:grid;grid-template-columns:1fr}.credentials-inner>img{width:100%}}
-/* =========================
-   EMERGENCY BUTTON
-========================= */
 
 .emergency {
     position: fixed;
@@ -97,11 +94,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
     width: 43px;
 }
 
-
-/* =========================
-   EMERGENCY MODAL
-========================= */
-
 .emergency-modal {
     position: fixed;
     inset: 0;
@@ -120,8 +112,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
     display: block;
 }
 
-
-/* Close button */
 
 .emergency-close {
     position: fixed;
@@ -153,7 +143,7 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
 }
 
 
-/* Cards container */
+
 
 .emergency-grid {
     width: min(1000px, 100%);
@@ -167,8 +157,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
     gap: 10px;
 }
 
-
-/* Individual cards */
 
 .emergency-card {
     background: white;
@@ -197,7 +185,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
 }
 
 
-/* Icon */
 
 .emergency-icon {
     color: var(--orange);
@@ -214,7 +201,7 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
 }
 
 
-/* Card title */
+
 
 .emergency-card h3 {
     font-size: 16px;
@@ -225,8 +212,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
 }
 
 
-/* Description */
-
 .emergency-card p {
     font-size: 13px;
 
@@ -235,8 +220,6 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
     margin-bottom: 4px;
 }
 
-
-/* Phone */
 
 .emergency-card a {
     color: #111;
@@ -275,5 +258,92 @@ footer{background:#056989;color:white;padding-top:65px}.footer-grid{display:grid
 
     .emergency-card {
         min-height: 130px;
+    }
+}
+
+.success-popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99999;
+    padding: 20px;
+}
+
+.success-popup-overlay.show {
+    display: flex;
+}
+
+.success-popup {
+    width: 100%;
+    max-width: 430px;
+    background: #fff;
+    border-radius: 18px;
+    padding: 40px 30px 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+    animation: successPopupIn 0.25s ease;
+}
+
+.success-popup-close {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    border: none;
+    background: transparent;
+    font-size: 30px;
+    cursor: pointer;
+    color: #333;
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #e8f7ee;
+    color: #168a4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.success-popup h2 {
+    color: #086b91;
+    margin-bottom: 12px;
+}
+
+.success-popup p {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.success-popup small {
+    display: block;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.success-popup .primary-btn {
+    border: none;
+    cursor: pointer;
+    min-width: 130px;
+}
+
+@keyframes successPopupIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
