@@ -192,3 +192,23 @@ appointmentForm.addEventListener("submit", async function (event) {
         "Request Appointment →";
 
 });
+const successPopup = document.getElementById("successPopup");
+const successPopupClose = document.getElementById("successPopupClose");
+const successPopupOk = document.getElementById("successPopupOk");
+
+function showAppointmentSuccess() {
+    successPopup.classList.add("show");
+}
+
+function closeAppointmentSuccess() {
+    successPopup.classList.remove("show");
+}
+
+successPopupClose.addEventListener("click", closeAppointmentSuccess);
+successPopupOk.addEventListener("click", closeAppointmentSuccess);
+
+successPopup.addEventListener("click", (e) => {
+    if (e.target === successPopup) {
+        closeAppointmentSuccess();
+    }
+});
