@@ -223,3 +223,60 @@ appointmentForm.addEventListener(
             "Request Appointment →";
     }
 );
+const emergencyBtn =
+    document.getElementById("emergencyBtn");
+
+const emergencyModal =
+    document.getElementById("emergencyModal");
+
+const emergencyClose =
+    document.getElementById("emergencyClose");
+
+if (emergencyBtn && emergencyModal) {
+
+    emergencyBtn.addEventListener("click", function () {
+
+        emergencyModal.classList.add("show");
+
+        emergencyModal.setAttribute(
+            "aria-hidden",
+            "false"
+        );
+
+    });
+
+}
+
+if (emergencyClose && emergencyModal) {
+
+    emergencyClose.addEventListener("click", function () {
+
+        emergencyModal.classList.remove("show");
+
+        emergencyModal.setAttribute(
+            "aria-hidden",
+            "true"
+        );
+
+    });
+
+}
+
+if (emergencyModal) {
+
+    emergencyModal.addEventListener("click", function (event) {
+
+        if (event.target === emergencyModal) {
+
+            emergencyModal.classList.remove("show");
+
+            emergencyModal.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+        }
+
+    });
+
+}
